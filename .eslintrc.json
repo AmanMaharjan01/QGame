@@ -1,0 +1,82 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "react-hooks"],
+  "rules": {
+    "import": 0,
+    "max-len": 0,
+    "no-alert": 2,
+    "no-shadow": 0,
+    "no-console": 2,
+    "no-plusplus": 0,
+    "comma-dangle": 0,
+    "import/no-cycle": 0,
+    "react/prop-types": 1,
+    "no-return-assign": 0,
+    "consistent-return": 1,
+    "no-param-reassign": 0,
+    "react/display-name": 0,
+    "no-use-before-define": 0,
+    "no-underscore-dangle": 0,
+    "react/button-has-type": 1,
+    "react/no-children-prop": 0,
+    "react/forbid-prop-types": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/no-array-index-key": 0,
+    "react/no-unused-prop-types": 1,
+    "react/require-default-props": 0,
+    "react/no-unescaped-entities": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-filename-extension": 0,
+    "react/destructuring-assignment": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-key": 1,
+    "react-hooks/rules-of-hooks": 2,
+    "no-unused-vars": [
+      1,
+      {
+        "ignoreRestSiblings": false
+      }
+    ],
+    "prettier/prettier": [
+      2,
+      {
+        "printWidth": 100,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "tabWidth": 2
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
